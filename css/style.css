@@ -1,0 +1,569 @@
+/*----------
+    Reset
+----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------
+    Common
+----------*/
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------
+    Common
+----------*/
+
+.nav-bar{
+    width: 60px;
+    height: calc(100vh - 70px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: grey;
+    z-index: 20;
+}
+
+/*-----------
+Sidebar + Main
+-----------*/
+
+.logo{
+    display: none;
+}
+
+.small-logo{
+    width: 50px;
+    padding: .3rem;
+}
+
+.text-ico{
+    display: none;
+}
+
+.ico{
+    width: 35px;
+    padding: .3rem;
+}
+
+.download{
+    width: 50px;
+    padding: .5rem;
+}
+
+.download-app{
+    border-bottom: 1px solid grey;
+}
+
+.profile-img{
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.profile-text{
+    font-weight: bold;
+    color: white;
+}
+
+
+.icon-play{
+    font-size: 40px;
+    padding: .3rem .5rem;
+    color: grey;
+}
+
+.playlist-title{
+    font-weight: bold;
+    color: white;
+}
+
+.play-list{
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.play-list1{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.sidebar .ico{
+    border-left: 4px solid green;
+}
+
+.central-overflow{
+    overflow-y: scroll;
+}
+
+.banner-upgrade{
+    width: calc(100vw - 50px);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:black;
+    opacity: 5;
+    z-index: 10;
+}
+
+.ban-up{
+    position: relative;
+}
+
+.btn{
+    font-size: .625rem;
+    padding: .625rem;
+    width: 150px;
+    background-color: rgba(0, 0,0, 0.5);
+    color: rgb(173, 169, 169);
+    border: 1px solid rgb(173, 169, 169);
+    border-radius: 15px;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
+.central-section{
+    width: calc(100vw - 50px);
+    position: fixed;
+    top: 50px;
+    right:0;
+    background-color:rgb(28, 28, 43) ;
+}
+
+.top-bar{
+    font-size: .5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.topbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.topbar li{
+    color: lightgray;
+    list-style: none;
+    font-size: .625rem;
+    flex: 1 1 20%;
+}
+
+.topbar .green-part{
+    border-bottom: 4px solid green;
+}
+
+h2{
+    color: white;
+}
+
+.recently-played,.user{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.music-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.box1{
+    color: white;
+    font-size: .8rem;
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.box-img{
+    width: 150px;
+    position: relative;
+}
+
+.box-img img{
+    width: 100%;
+}
+
+.over{
+    display: none;
+}
+
+.over i{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.music-box2{
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.box2{
+    color: white;
+    font-size: .8rem;
+    flex: 0 1 15%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.subtitle{
+    color: grey;
+    margin: .5rem 1rem;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img{
+    width: 100%;
+}
+
+h3{
+    margin-top: 0.5rem;
+}
+
+/*-----------
+    Footer
+-----------*/
+
+footer{
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    position: fixed;
+}
+
+.left-footer{
+    display: flex;
+    align-items: center;
+    flex: 0 1 30%;
+}
+
+.subtitle-name{
+    color: lightgray;
+}
+
+.sinister{
+    flex: 0 1 70px;
+    padding: .5rem;
+}
+
+.title-name{
+    flex: 0 1 50%;
+    font-size: .8rem;
+    margin-right:1rem;
+}
+
+.sinister-img{
+    width: 100%;
+}
+
+.icons-footer{
+    flex-shrink: 1;
+}
+
+.icons-left{
+    margin: .1rem;
+    color: lightgrey;
+}
+
+.icons-footer-center{
+    display: flex;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.icons-center{
+    margin: .3rem;
+    flex:0 1 25%;
+}
+
+.icons-right{
+    margin: .3rem;
+    flex-shrink: 1;
+}
+
+.sound-bar{
+    flex-shrink: 1;
+}
+
+.text-bar{
+    flex: 0 1 1rem;
+}
+
+.center-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 30%;
+}
+
+.footer-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-footer{
+    display: flex;
+    flex: 0 1 30%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*-----------
+    Hover
+-----------*/
+
+.box-img:hover .over{
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: white;
+    border: 1px solid white;
+
+}
+
+
+.play-list1:hover{
+    color: white;
+    cursor: pointer;
+
+}
+.play-list:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+.menu:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+.download-app:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.subtitle-name:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icons-left:hover{
+    color:white ;
+    cursor: pointer;
+}
+
+.topbar li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------
+    Media
+-----------*/
+
+@media (min-width: 600px){
+    .nav-bar{
+        width: 180px;
+        height: calc(100vh - 70px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: grey;
+    }
+
+    .logo{
+        display: block;
+        width: 100px;
+        margin: 1rem .5rem;
+    }
+
+    .text-ico{
+        display: block;
+    }
+
+    .small-logo{
+        display: none;
+    }
+
+    .ico{
+        width: 35px;
+        padding: .3rem;
+    }
+
+    .download{
+        width: 50px;
+        padding: .5rem;
+    }
+
+    .download-app{
+        border-bottom: 1px solid grey;
+    }
+
+    .profile-img{
+        width: 35px;
+        height: 35px;
+        background-color: grey;
+        border-radius: 50%;
+        margin: .5rem;
+    }
+
+    .profile-text{
+        font-weight: bold;
+        color: white;
+    }
+
+    .icon{
+        font-size: 40px;
+        padding: .5rem;
+    }
+
+    .icon-play{
+        font-size: 40px;
+        padding: .3rem .5rem;
+        color: grey;
+    }
+
+    .play-list{
+        padding-top: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .play-list1{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .central-section{
+        width: calc(100vw - 180px);
+        height: calc(100vh - 120px);
+        overflow-y: scroll;
+        position: fixed;
+        top: 50px;
+        right:0;
+    }
+
+    .topbar li{
+        flex: 1 1 30%;
+    }
+
+    .box1{
+        flex: 1 1 48%
+    }
+
+    .banner-upgrade{
+        width: calc(100vw - 180px);
+        height: 50px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    footer{
+        width: 100vw;
+        height: 70px;
+
+
+    }
+
+}
+
+@media (min-width: 700px){
+    .icons-foot{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topbar li{
+        flex: 1 1 15%;
+    }
+
+    .box1{
+        flex: 0 1 20%;
+    }
+
+    .music-box{
+        justify-content: left;
+    }
+
+
+}
+
+
+@media (min-width:1100px) {
+
+    .topbar li{
+        flex: 1 1 1%;
+    }
+
+    .box1{
+        flex: 1 1 1%;
+    }
+
+}
